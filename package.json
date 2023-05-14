@@ -1,56 +1,59 @@
 {
-  "name": "tool-name",
-  "author": "wsafight",
-  "version": "0.0.1",
-  "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "engines": {
-    "node": ">=10"
-  },
+  "name": "tool-library-template",
+  "version": "0.0.2",
+  "jsnext:source": "./src/index.ts",
+  "types": "./dist/types/index.d.ts",
+  "main": "./dist/lib/index.js",
+  "module": "./dist/es/index.js",
   "scripts": {
-    "start": "dts watch",
-    "build": "dts build",
-    "test": "dts test",
-    "lint": "dts lint",
-    "prepare": "dts build",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
+    "prepare": "modern build && husky install",
+    "dev": "modern dev",
+    "build": "modern build",
+    "build:watch": "modern build -w",
+    "reset": "rimraf ./**/node_modules",
+    "lint": "modern lint",
+    "change": "modern change",
+    "bump": "modern bump",
+    "pre": "modern pre",
+    "change-status": "modern change-status",
+    "gen-release-note": "modern gen-release-note",
+    "release": "modern release",
+    "new": "modern new",
+    "upgrade": "modern upgrade",
+    "test": "modern test"
   },
-  "peerDependencies": {},
-  "husky": {
-    "hooks": {
-      "pre-commit": "dts lint"
-    }
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
+    ],
+    "*.{js,jsx,mjs,mjsx,cjs,cjsx}": [
+      "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
+    ]
   },
-  "keywords": [],
-  "prettier": {
-    "printWidth": 80,
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "module": "dist/tool-name.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/tool-name.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/tool-name.esm.js",
-      "limit": "10 KB"
-    }
+  "eslintIgnore": [
+    "node_modules/",
+    "dist/"
   ],
+  "dependencies": {},
+  "peerDependencies": {},
   "devDependencies": {
-    "@size-limit/preset-small-lib": "8.1.1",
-    "husky": "8.0.3",
-    "size-limit": "8.1.1",
-    "dts-cli": "1.6.3",
-    "tslib": "2.4.1",
-    "typescript": "4.9.4"
+    "@modern-js/module-tools": "2.19.1",
+    "@modern-js/eslint-config": "2.19.1",
+    "@modern-js/tsconfig": "2.19.1",
+    "@modern-js-app/eslint-config": "2.19.1",
+    "rimraf": "~3.0.2",
+    "lint-staged": "~13.1.0",
+    "prettier": "~2.8.1",
+    "husky": "~8.0.1",
+    "typescript": "~4.9.4",
+    "@types/jest": "~29.2.4",
+    "@types/node": "~16.11.7",
+    "@types/react": "~18.0.26",
+    "@modern-js/plugin-testing": "2.19.1"
+  },
+  "sideEffects": [],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
