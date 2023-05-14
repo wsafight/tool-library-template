@@ -1,49 +1,45 @@
 # tool-library-template
 
-only a tool library template by Modern.js
+<!-- [![NPM Version](https://badgen.net/npm/v/tool-library-template)](https://www.npmjs.com/package/tool-library-template) -->
 
-## Setup
+Read this in other languages:
+[English](https://github.com/wsafight/tool-library-template/blob/main/README.EN.md)
 
-Install the dependencies:
+工具库模板
+
+## 特性
+
+- [x] 基于 modern.js
+
+## 安装
 
 ```bash
-pnpm run install
+npm install tool-library-template
 ```
 
-## Get Started
+或者
 
-Run and debug the module:
-
-```
-pnpm run dev
+```bash
+yarn add tool-library-template
 ```
 
-Run test cases:
+## 用法
 
-```
-pnpm run test
-```
+#### 参数
 
-Build the module for production:
+| 参数                | 说明                       | 类型                                             | 默认值       |
+| :---------------- | :----------------------- | :--------------------------------------------- | :-------- |
+|             |                       |                             |         |
 
-```
-pnpm run build
-```
 
-Enable optional features:
+#### 例子
 
-```
-pnpm run new
-```
-
-Other commands:
-
-```
-pnpm run lint         # Lint and fix source files
-pnpm run change       # Add a new changeset
-pnpm run bump         # Update version and changelog via changeset
-pnpm run release      # Release the package
+```ts
 
 ```
 
-For more information, see the [Modern.js Module documentation](https://modernjs.dev/module-tools/en).
+## Changelog
+
+- 0.0.2 切换框架为 modern.js
+
+- 0.0.1 基本可用
