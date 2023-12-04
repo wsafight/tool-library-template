@@ -37,6 +37,8 @@ yarn add tool-library-template
 
 ## Changelog
 
+- 0.0.3 Add np instead of npm publish
+
 - 0.0.2 switch framework to modern.js
 
 - 0.0.1 basically available

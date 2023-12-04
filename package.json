@@ -1,6 +1,6 @@
 {
   "name": "tool-library-template",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "jsnext:source": "./src/index.ts",
   "types": "./dist/types/index.d.ts",
   "main": "./dist/lib/index.js",
@@ -20,7 +20,8 @@
     "release": "modern release",
     "new": "modern new",
     "upgrade": "modern upgrade",
-    "test": "modern test"
+    "test": "modern test",
+    "np": "np"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -49,7 +50,8 @@
     "@types/jest": "29.5.9",
     "@types/node": "20.9.3",
     "@types/react": "18.2.38",
-    "@modern-js/plugin-testing": "2.40.0"
+    "@modern-js/plugin-testing": "2.40.0",
+    "np": "9.0.0"
   },
   "sideEffects": [],
   "publishConfig": {

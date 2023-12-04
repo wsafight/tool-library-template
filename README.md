@@ -40,6 +40,8 @@ yarn add tool-library-template
 
 ## Changelog
 
+- 0.0.3 添加 np 替代 npm publish
+
 - 0.0.2 切换框架为 modern.js
 
 - 0.0.1 基本可用
