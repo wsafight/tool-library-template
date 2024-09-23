@@ -38,24 +38,25 @@
   "dependencies": {},
   "peerDependencies": {},
   "devDependencies": {
-    "@modern-js/module-tools": "2.48.3",
-    "@modern-js/eslint-config": "2.48.3",
-    "@modern-js/tsconfig": "2.48.3",
-    "@modern-js-app/eslint-config": "2.48.3",
-    "rimraf": "5.0.5",
-    "lint-staged": "15.2.2",
-    "prettier": "3.2.5",
-    "husky": "9.0.11",
-    "typescript": "5.4.3",
-    "@types/jest": "29.5.12",
-    "@types/node": "20.11.30",
-    "@types/react": "18.2.69",
-    "@modern-js/plugin-testing": "2.48.3",
-    "np": "10.0.2"
+    "@modern-js/module-tools": "2.60.1",
+    "@modern-js/tsconfig": "2.60.1",
+    "@modern-js/eslint-config": "2.59.0",
+    "@modern-js-app/eslint-config": "2.59.0",
+    "@modern-js/plugin-testing": "2.60.1",
+    "rimraf": "6.0.1",
+    "lint-staged": "15.2.10",
+    "prettier": "3.3.3",
+    "husky": "9.1.6",
+    "typescript": "5.6.2",
+    "@types/jest": "29.5.13",
+    "@types/node": "22.5.5",
+    "@types/react": "18.3.8",
+    "np": "10.0.7"
   },
   "sideEffects": [],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
 }
